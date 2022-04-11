@@ -1,0 +1,55 @@
+body {
+    background-color: aquamarine;
+}
+
+div.cool {
+    width: 700px;
+    height: 500px;
+    background-color: cornsilk;
+    padding-left: 50px;
+    position: relative;
+    left: 330px;
+    top: 50px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+}
+
+div.cl {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#img-1 {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: 85px;
+}
+
+button:hover {
+    transition: 0.5s;
+    color: grey;
+    transform: translateY(-10px);
+
+}
+
+button {
+    padding: 30px;
+    box-shadow: 5px 5px black;
+
+}
+
+button.space {
+    margin-left: 50px;
+}
+
+#img-2 {
+    margin-top: -500px;
+    position: relative;
+    left: 160px;
+    top: -110px;
+}
