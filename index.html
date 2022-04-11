@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="cool">
+        <img id="img-1" src="  https://www.w3schools.com/js/pic_bulboff.gif" alt="bulboff">
+        <br>
+        <button onclick="BulbOM()">Bulb On</button>
+        <button onclick="Bulboff()" class="space">Bulb Off</button>
+        <span>
+
+            <img id="img-2" src="  https://www.w3schools.com/js/pic_bulboff.gif" alt="bulboff">
+            <button onclick="turonoroff()" class="space">Bulb On/Off</button>
+        </span>
+    </div>
+    <script>
+        let bulbon = false;
+        function BulbOM() {
+            document.getElementById("img-1").src = "https://www.w3schools.com/js/pic_bulbon.gif";
+        }
+        function Bulboff() {
+            document.getElementById("img-1").src = "https://www.w3schools.com/js/pic_bulboff.gif";
+        }
+        function turonoroff() {
+            if (bulbon) {
+                document.getElementById("img-2").src = "https://www.w3schools.com/js/pic_bulboff.gif";
+                bulbon = false;
+            } else {
+                document.getElementById("img-2").src = "https://www.w3schools.com/js/pic_bulbon.gif";
+                bulbon = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
